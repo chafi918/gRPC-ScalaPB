@@ -1,0 +1,39 @@
+
+syntax = "proto3";
+
+package sg.protocol.grpc.poc;
+
+import "scalapb/scalapb.proto";
+
+service CityService {
+    rpc GetCity(CityRequest) returns (CityResponse) {}
+}
+
+message CityRequest{
+    Filter filter = 1;
+}
+
+message CityResponse {
+    repeated City cities = 1 [(scalapb.field).collection_type="Array"];
+}
+
+message Filter {
+    string value = 1;
+    FilterType type = 2;
+}
+
+enum FilterType {
+    ID = 0;
+    NAME = 1;
+    COUNTRY = 2;
+    ALL = 3;
+}
+
+message City {
+    string name = 1;
+    string name_ascii = 2;
+    string lat = 3;
+    string lon = 4;
+    string country = 5;
+    string id = 6;
+}

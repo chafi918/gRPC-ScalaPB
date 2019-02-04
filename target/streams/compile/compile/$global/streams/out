@@ -1,0 +1,7 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/macbookpro/Desktop/CHAFIQ/workspace/grpcScalapbPoc/src/main/scala/CitiesServerImpl.scala:10:8: value Name is not a member of object sg.protocol.grpc.poc.city.FilterType[0m
+[0m[[0m[31merror[0m] [0m[0mimport sg.protocol.grpc.poc.city.FilterType.{COUNTRY, ID, Name}[0m
+[0m[[0m[31merror[0m] [0m[0m       ^[0m
+[0m[[0m[31merror[0m] [0m[0m/Users/macbookpro/Desktop/CHAFIQ/workspace/grpcScalapbPoc/src/main/scala/CitiesServerImpl.scala:84:14: not found: value Name[0m
+[0m[[0m[31merror[0m] [0m[0m        case Name => getCitiesByName(request.getFilter.value)[0m
+[0m[[0m[31merror[0m] [0m[0m             ^[0m
+[0m[[0m[31merror[0m] [0m[0mtwo errors found[0m
